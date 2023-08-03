@@ -1,0 +1,12 @@
+[Unit]
+Description=The Multicast Picture Capture Client is a C++ application designed to function as a client in a multicast communication setup. The purpose of this client is to listen for multicast messages and capture pictures from the network stream when specific multicast messages are received. It operates as part of a larger distributed system where other devices or applications act as multicast message senders.
+
+[Service]
+ExecStart=/camsoft/listen
+Restart=always
+RestartSec=10s
+User=root
+Group=root
+
+[Install]
+WantedBy=default.target
